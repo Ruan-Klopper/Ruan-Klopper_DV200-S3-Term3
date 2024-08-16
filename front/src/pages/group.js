@@ -5,6 +5,18 @@ import SideNav from "../compoments/sideNav";
 import PostItemLg from "../compoments/postItemLG";
 import NotLoggedIn from "../compoments/NotLoggedIn";
 
+const MemberItem = ({ memberImg, memberName }) => {
+  return (
+    <div className="groupMemberItemBody">
+      <div
+        className="groupMemberItemImg"
+        style={{ backgroundImage: `url(${memberImg})` }}
+      ></div>
+      <div className="groupMemberItemName">{memberName}</div>
+    </div>
+  );
+};
+
 const LoggedInContent = () => {
   const posts = Array.from({ length: 5 }, (_, index) => index);
   return (
@@ -102,7 +114,44 @@ const LoggedInContent = () => {
               </div>
               <div className="groupDetailsMembersBody">
                 <h4>Group members</h4>
-                <div className="groupDetailsMembersContainer"></div>
+                <div className="groupDetailsMembersContainer">
+                  <MemberItem
+                    memberName={"user_1234"}
+                    memberImg={"../assets/test/test2.jpeg"}
+                  />
+                  <MemberItem
+                    memberName={"user_1234"}
+                    memberImg={"../assets/test/test2.jpeg"}
+                  />
+                  <MemberItem
+                    memberName={"user_1234"}
+                    memberImg={"../assets/test/test2.jpeg"}
+                  />
+                  <MemberItem
+                    memberName={"user_1234"}
+                    memberImg={"../assets/test/test2.jpeg"}
+                  />
+                  <MemberItem
+                    memberName={"user_1234"}
+                    memberImg={"../assets/test/test2.jpeg"}
+                  />
+                  <MemberItem
+                    memberName={"user_1234"}
+                    memberImg={"../assets/test/test2.jpeg"}
+                  />
+                  <MemberItem
+                    memberName={"user_1234"}
+                    memberImg={"../assets/test/test2.jpeg"}
+                  />
+                  <MemberItem
+                    memberName={"user_1234"}
+                    memberImg={"../assets/test/test2.jpeg"}
+                  />
+                  <MemberItem
+                    memberName={"user_1234"}
+                    memberImg={"../assets/test/test2.jpeg"}
+                  />
+                </div>
               </div>
             </div>
           </div>
